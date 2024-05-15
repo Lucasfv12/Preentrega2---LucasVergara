@@ -37,7 +37,7 @@ if(pokemonElegido.length > 0){
 }
 
 
-let eleccionDePokemon2 = prompt(`Ahora podrás conocer la primer evolución de tu pokemon. Para ayudarte te pido que vuelvas a escribir el nombre tu pokemón elegido para realizar la busqueda de la evolución.`)
+let eleccionDePokemon2 = prompt(`Ahora podrás conocer la primer evolución de tu pokemon. Para ayudarte te pido que vuelvas a escribir el nombre tu pokemón elegido: Bulbasaur, Charmander o Squirtle.`)
 
 
 let evoluciones = [
@@ -50,6 +50,7 @@ let evolucionCorrespondiente = evoluciones.find(evolucion => evolucion.evolucion
 
 if(evolucionCorrespondiente){
     alert(`La evolucion de ${eleccionDePokemon2} es ${evolucionCorrespondiente.nombre}.`)
+    return
 }else{
     alert(`El pokemon ingresado no es correcto. Volvamos a empezar`)
     elegirPokemon()
